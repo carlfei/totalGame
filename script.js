@@ -2,32 +2,23 @@ $(document).ready(function () {
     
   for (var k = 1; k < 10; k++) { //crea las img en los div
 
-        var imgA = $("<img>", {
-          src: "img/1.PNG",
-          width: "45",
-          height: "45",
-          id: "a" + k,
+        var imgA = $("<img>", { src: "img/1.PNG",  width: "45", height: "45", id: "a" + k
         });
 
-        var imgB = $("<img>", {
-          src: "img/2.PNG",
-          width: "45",
-          height: "45",
-          id: "b" + k,
+        var imgB = $("<img>", {  src: "img/2.PNG",  width: "45", height: "45", id: "b" + k
         });
 
-            $("#" + k).append(imgA);
-            $("#" + k).append(imgB);
+        $("#" + k).append(imgA); //mete las img
+        $("#" + k).append(imgB);
+
+        $("#a" + k).hide();
+        $("#b" + k).hide();//oculta las img
   }
 
-  for (var j = 1; j < 10; j++) {
-        $("#a" + j).hide();
-        $("#b" + j).hide();//oculta las img
-  }
 });
 
 var theArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-var arrayDesordenado = desordenarArray(theArray);
+var arrayDesordenado = desordenarArray(theArray); //randomizar contenido array
 var index = 0;
 
 var bucleInterval, reloadInterval;
@@ -76,7 +67,7 @@ function functionInterval() { //funcion asincrona, comprueba si algun div a lleg
 }
 
 function desordenarArray(array) {
-  return array.sort(() => Math.random() - 0.5);
+  return array.sort(() => Math.random() - 0.5); //desordena array, proceso estocastico !
 }
 
 function reloadGame() {

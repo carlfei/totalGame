@@ -35,17 +35,43 @@ body{
   
   .flex-container {
     display: flex;
-    flex-wrap: nowrap;
+    /*flex-wrap: nowrap;*/
+    flex-wrap: wrap; 
     justify-content: center; /* Centra horizontalmente */
-    background-color: DodgerBlue;
+   background-color: DodgerBlue;
   }
   
   .flex-container > div {
     background-color: #f1f1f1;
-    width: 100px;
+    width: calc(13.33% - 20px); /* Establecemos un ancho máximo con margen */
+    /*width: 100px;*/
     margin: 10px;
     text-align: center;
     line-height: 75px;
     font-size: 30px;
   }
+
+  .divMargen {
+    
+    margin: 20px auto; /* Margen automático horizontal y 20px arriba y abajo */
+    padding: 10px;
+    border: 2px solid #000;
+    max-width: 800px;
+    max-height: 800px;
+    background-color: DodgerBlue;
+    display: flex; /* Utilizar flexbox para centrar */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    
+    /*
+    margin: 20px; 
+    padding: 10px;
+    border: 2px solid #000; 
+    max-width: 800px; 
+   max-height: 800px; 
+ 
+    background-color: DodgerBlue; 
+    */
+}
+
 

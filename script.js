@@ -110,7 +110,8 @@ function functionStopTooltip(a, b) {
   if (a == "b") {
     $("#b" + b).tooltip("hide");
  
-    clearInterval(tooltipIntervalFail);
+    //clearInterval(tooltipIntervalFail);
+   
   }
 }
 

@@ -170,11 +170,12 @@ function barra(){
    });
 
    $(".progress").append(automaticDiv);
+
+   $('.toast').toast('show');
+
   clearInterval(bucleInterval); //para el bucle de intervalo
 
 }
-
-
 
 function desordenarArray(array) {
   return array.sort(() => Math.random() - 0.5); //desordena array, proceso estocastico !
